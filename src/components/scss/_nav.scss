@@ -1,0 +1,13 @@
+@import "./variables";
+
+
+.nav {
+    list-style: none;
+    background-color: blue;
+    color: wheat;
+    display: flex;
+  
+   li{
+      padding: 5px; 
+   } 
+}

@@ -1,0 +1,29 @@
+.nav {
+  list-style: none;
+  background-color: blue;
+  color: wheat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav li {
+  padding: 5px;
+}
+
+.banner {
+  background-image: url("https://www.roberthalf.com/sites/default/files/2020-06/web-developer-questions.jpg");
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner .cover {
+  background-color: rgba(0, 0, 0, 0.397);
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0%;
+}
+/*# sourceMappingURL=style.css.map */
