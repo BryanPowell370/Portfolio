@@ -1,13 +1,32 @@
 @import "./variables";
 
+.NavWrapper {
+   position: absolute;
+   width: 100vw;
 
-.nav {
-    list-style: none;
-    background-color: blue;
-    color: wheat;
-    display: flex;
-  
-   li{
-      padding: 5px; 
-   } 
+   .nav {
+      list-style: none;
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      display: flex;
+      @include fitContent;
+
+      margin: auto;
+
+
+      li {
+         margin: 10px;
+
+         &:hover {
+            color: $buttonColor;
+         }
+
+         h1 {
+
+            text-align: center;
+         }
+
+         padding: 5px;
+      }
+   }
 }

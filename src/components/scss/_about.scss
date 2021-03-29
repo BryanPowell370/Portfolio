@@ -1,0 +1,36 @@
+@import "./variables";
+
+.aboutContainer {
+    @include fullScreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: relative;
+bottom: 0;
+    div {
+
+        display: flex;
+     //   justify-content: center;
+     //   align-items: center;
+
+        .WaterMark {
+            font-size: 10rem;
+            position: relative;
+            top: 0;
+            margin: 10px;
+            color: rgb(177, 177, 177);
+        }
+
+
+        .KnowMore {
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            position: relative;
+            top: 0;
+            right: 50%;
+            z-index: 10;
+        }
+    }
+
+}

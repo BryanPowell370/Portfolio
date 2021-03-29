@@ -1,14 +1,102 @@
+@import "./variables";
+
 .banner {
     background-image: url("https://www.roberthalf.com/sites/default/files/2020-06/web-developer-questions.jpg");
-   
+
     width: 100vw;
     height: 100vh;
-    
+
 
     .cover {
-        background-color: rgba(0, 0, 0, 0.397);
+        background-color: rgba(0, 0, 0, 0.7);
         width: 100vw;
         height: 100vh;
-    }
+        color: white;
+        display: inline-flex;
 
+        justify-content: center;
+
+        svg {
+            position: relative;
+            top: 90%;
+            right: 14%;
+
+        }
+
+        .textLayout {
+            text-align: center;
+            @include fitContent;
+
+            position: relative;
+            top: 40vh;
+
+            li {
+                list-style: none;
+                margin: 20px;
+
+
+
+                .typing {
+                    padding: 10px;
+                    border-right: .30rem solid white;
+                    white-space: nowrap;
+                    margin: 0 auto;
+                    overflow: hidden;
+
+                    animation: typing 3.5s cubic-bezier(0.1, 0.2, 0.2, 1) alternate-reverse infinite, blink-caret 1s step-end infinite;
+
+
+
+                    @keyframes typing {
+                        from {
+                            width: 0;
+                        }
+
+                        to {
+
+                            width: 100%;
+
+                        }
+
+                    }
+
+                    @keyframes typingReverse {
+                        from {
+                            width: 100%;
+                        }
+
+                        to {
+                            width: 0%;
+
+                        }
+
+                    }
+
+                    @keyframes blink-caret {
+
+                        from,
+                        to {
+                            border-color: transparent;
+                        }
+
+                        50% {
+                            border-color: white;
+                        }
+                    }
+                }
+
+
+
+
+            }
+
+            h1 {
+                text-align: center;
+                @include fitContent;
+                position: relative;
+                margin: auto;
+                font-size: 50px;
+            }
+        }
+    }
 }

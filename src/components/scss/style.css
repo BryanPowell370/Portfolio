@@ -1,14 +1,71 @@
-.nav {
+.button {
+  background: transparent;
+  text-decoration: none;
+  padding: 0.8rem 2.6rem;
+  border-radius: 50rem;
+  color: #20c997;
+  border-color: #20c997;
+  border-style: solid;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transition: ease-in .25s;
+  transition: ease-in .25s;
+  color: white;
+  background-color: #20c997;
+}
+
+.NavWrapper {
+  position: absolute;
+  width: 100vw;
+}
+
+.NavWrapper .nav {
   list-style: none;
-  background-color: blue;
-  color: wheat;
+  background-color: transparent;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
 }
 
-.nav li {
+.NavWrapper .nav li {
+  margin: 10px;
   padding: 5px;
+}
+
+.NavWrapper .nav li:hover {
+  color: #20c997;
+}
+
+.NavWrapper .nav li h1 {
+  text-align: center;
+}
+
+.button {
+  background: transparent;
+  text-decoration: none;
+  padding: 0.8rem 2.6rem;
+  border-radius: 50rem;
+  color: #20c997;
+  border-color: #20c997;
+  border-style: solid;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transition: ease-in .25s;
+  transition: ease-in .25s;
+  color: white;
+  background-color: #20c997;
 }
 
 .banner {
@@ -18,12 +75,186 @@
 }
 
 .banner .cover {
-  background-color: rgba(0, 0, 0, 0.397);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
   height: 100vh;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .cover svg {
+  position: relative;
+  top: 90%;
+  right: 14%;
+}
+
+.banner .cover .textLayout {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 40vh;
+}
+
+.banner .cover .textLayout li {
+  list-style: none;
+  margin: 20px;
+}
+
+.banner .cover .textLayout li .typing {
+  padding: 10px;
+  border-right: .30rem solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  overflow: hidden;
+  animation: typing 3.5s cubic-bezier(0.1, 0.2, 0.2, 1) alternate-reverse infinite, blink-caret 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes typingReverse {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes typingReverse {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.banner .cover .textLayout h1 {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  font-size: 50px;
+}
+
+.button {
+  background: transparent;
+  text-decoration: none;
+  padding: 0.8rem 2.6rem;
+  border-radius: 50rem;
+  color: #20c997;
+  border-color: #20c997;
+  border-style: solid;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-transition: ease-in .25s;
+  transition: ease-in .25s;
+  color: white;
+  background-color: #20c997;
+}
+
+.aboutContainer {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 0;
+}
+
+.aboutContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutContainer div .WaterMark {
+  font-size: 10rem;
+  position: relative;
+  top: 0;
+  margin: 10px;
+  color: #b1b1b1;
+}
+
+.aboutContainer div .KnowMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  position: relative;
+  top: 0;
+  right: 50%;
+  z-index: 10;
 }
 
 * {
   margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

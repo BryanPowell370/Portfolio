@@ -1,0 +1,28 @@
+$buttonColor: #20c997;
+
+@mixin fitContent {
+    width: fit-content;
+    height: fit-content;
+}
+
+@mixin fullScreen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.button {
+    background: transparent;
+    text-decoration: none;
+    padding: 0.8rem 2.6rem;
+    border-radius: 50rem;
+    color: $buttonColor;
+    border-color: $buttonColor;
+    border-style: solid;
+
+    &:hover {
+        cursor: pointer;
+        transition: ease-in .25s;
+        color: white;
+        background-color: $buttonColor;
+    }
+}
