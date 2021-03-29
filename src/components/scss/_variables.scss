@@ -1,4 +1,10 @@
 $buttonColor: #20c997;
+$background: white;
+$backgroundFade: rgb(247, 247, 247);
+
+.themeColor {
+    color: $buttonColor;
+}
 
 @mixin fitContent {
     width: fit-content;
@@ -24,5 +30,42 @@ $buttonColor: #20c997;
         transition: ease-in .25s;
         color: white;
         background-color: $buttonColor;
+    }
+}
+
+
+.titleWrapper {
+    display: block;
+
+
+    div {
+        @include fitContent;
+        display: flex;
+
+        justify-self: center;
+        margin: auto;
+
+
+        .WaterMark {
+            font-size: 8rem;
+            letter-spacing: 20px;
+            color: rgba(156, 156, 156, 0.404);
+            position: relative;
+            right: -25%;
+        }
+
+
+        .KnowMore {
+            font-size: 3rem;
+            display: flex;
+            justify-self: center;
+            position: relative;
+            right: 25%;
+            margin: auto;
+            z-index: 10;
+            border-bottom: $buttonColor 3px solid;
+
+
+        }
     }
 }
