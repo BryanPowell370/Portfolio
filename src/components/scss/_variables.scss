@@ -32,7 +32,9 @@ $backgroundFade: rgb(247, 247, 247);
         background-color: $buttonColor;
     }
 }
-
+li{
+    list-style: none;
+}
 
 .titleWrapper {
     display: block;
