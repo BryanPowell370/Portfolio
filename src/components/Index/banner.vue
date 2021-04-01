@@ -3,7 +3,7 @@
     <div class="cover">
       <div class="textLayout">
         <li><h1>Welcome</h1></li>
-        <li style="display: flex;"><h1>I am a  </h1><h1 class="typing"> Web Developer.</h1></li>
+        <li><h1 class="typing">I am a Web Developer.</h1></li>
         <li><a class="button">Hire Me</a></li>
       </div>
 
