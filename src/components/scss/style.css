@@ -484,6 +484,41 @@ li {
 .contactLayout {
   width: 100vw;
   height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contactLayout .AddressLayout {
+  margin: auto;
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 1rem;
+  height: auto;
+}
+
+.contactLayout form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 500px;
+      grid-template-columns: 500px 500px;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+  gap: 1rem;
+}
+
+.contactLayout form input {
+  border-radius: 5px;
+}
+
+.contactLayout form textarea {
+  border-radius: 5px;
+  grid-column: span 2;
 }
 
 * {

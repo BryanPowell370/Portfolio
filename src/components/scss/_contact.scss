@@ -1,4 +1,36 @@
 @import "./variables";
-.contactLayout{
+
+.contactLayout {
     @include fullScreen;
+    height: fit-content;
+
+
+
+    .AddressLayout {
+        margin: auto;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        gap: 1rem;
+        height: auto;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 50px;
+        gap: 1rem;
+
+        input {
+            border-radius: 5px;
+        }
+
+        textarea {
+            
+            border-radius: 5px;
+            grid-column: span 2;
+        }
+    }
+
 }
