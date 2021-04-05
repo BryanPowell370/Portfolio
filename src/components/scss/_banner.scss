@@ -9,21 +9,19 @@
 
     .cover {
         background-color: rgba(0, 0, 0, 0.7);
-        width: 100vw;
-        height: 100vh;
+        @include fullScreen;
         color: white;
-        display: inline-flex;
-
-        justify-content: center;
+        display: grid;
+        place-items: center;
+         
+        grid-template-rows: auto 100px;
 
         svg {
             animation: upAndDown 1s;
 
             @keyframes upAndDown {}
 
-            position: relative;
-            top: 90%;
-            right: 14%;
+          
 
         }
 
@@ -31,8 +29,7 @@
             text-align: center;
             @include fitContent;
 
-            position: relative;
-            top: 40vh;
+         
 
             li {
                 list-style: none;
@@ -41,13 +38,14 @@
 
 
                 .typing {
+                  
                     padding: 10px;
-                    border-right: .30rem solid white;
+                    border-right: 4px solid $buttonColor;
                     white-space: nowrap;
                     margin: 0 auto;
                     overflow: hidden;
 
-                    animation: typing 3.5s cubic-bezier(0.1, 0.2, 0.2, 1) alternate-reverse infinite, blink-caret 1s step-end infinite;
+                    animation: typing 3.5s steps(40, end) alternate-reverse infinite, blink-caret 1s step-end infinite;
 
 
 
@@ -64,17 +62,7 @@
 
                     }
 
-                    @keyframes typingReverse {
-                        from {
-                            width: 100%;
-                        }
-
-                        to {
-                            width: 0%;
-
-                        }
-
-                    }
+                
 
                     @keyframes blink-caret {
 

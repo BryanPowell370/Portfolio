@@ -25,7 +25,9 @@ li {
 }
 
 .titleWrapper {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .titleWrapper div {
@@ -124,7 +126,9 @@ li {
 }
 
 .titleWrapper {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .titleWrapper div {
@@ -173,20 +177,16 @@ li {
   width: 100vw;
   height: 100vh;
   color: white;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-rows: auto 100px;
+      grid-template-rows: auto 100px;
 }
 
 .banner .cover svg {
   -webkit-animation: upAndDown 1s;
           animation: upAndDown 1s;
-  position: relative;
-  top: 90%;
-  right: 14%;
 }
 
 @-webkit-keyframes upAndDown {}
@@ -199,8 +199,6 @@ li {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
-  top: 40vh;
 }
 
 .banner .cover .textLayout li {
@@ -210,11 +208,11 @@ li {
 
 .banner .cover .textLayout li .typing {
   padding: 10px;
-  border-right: .30rem solid white;
+  border-right: 4px solid #20c997;
   white-space: nowrap;
   margin: 0 auto;
   overflow: hidden;
-  animation: typing 3.5s cubic-bezier(0.1, 0.2, 0.2, 1) alternate-reverse infinite, blink-caret 1s step-end infinite;
+  animation: typing 3.5s steps(40, end) alternate-reverse infinite, blink-caret 1s step-end infinite;
 }
 
 @-webkit-keyframes typing {
@@ -232,24 +230,6 @@ li {
   }
   to {
     width: 100%;
-  }
-}
-
-@-webkit-keyframes typingReverse {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
-}
-
-@keyframes typingReverse {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
   }
 }
 
@@ -313,7 +293,9 @@ li {
 }
 
 .titleWrapper {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .titleWrapper div {
@@ -389,10 +371,10 @@ li {
 }
 
 .projectsLayout .ProjectWrapper {
-  margin: auto;
-  width: 1000px;
   display: -ms-grid;
   display: grid;
+  place-items: center;
+  width: 1000px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
@@ -447,7 +429,9 @@ li {
 }
 
 .titleWrapper {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .titleWrapper div {

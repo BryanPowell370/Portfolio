@@ -2,6 +2,11 @@ $buttonColor: #20c997;
 $background: white;
 $backgroundFade: rgb(247, 247, 247);
 
+@mixin centerItems {
+    display: grid;
+    place-items: center;
+}
+
 .themeColor {
     color: $buttonColor;
 }
@@ -37,7 +42,7 @@ li{
 }
 
 .titleWrapper {
-    display: block;
+    @include centerItems;
 
 
     div {

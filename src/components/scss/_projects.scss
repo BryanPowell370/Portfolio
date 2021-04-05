@@ -3,10 +3,9 @@
     @include fullScreen;
 
     .ProjectWrapper {
+        @include centerItems;
 
-        margin: auto;
         width: 1000px;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
 
