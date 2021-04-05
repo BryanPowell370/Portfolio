@@ -17,6 +17,10 @@
         justify-content: center;
 
         svg {
+            animation: upAndDown 1s;
+
+            @keyframes upAndDown {}
+
             position: relative;
             top: 90%;
             right: 14%;

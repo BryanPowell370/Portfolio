@@ -182,12 +182,16 @@ li {
 }
 
 .banner .cover svg {
+  -webkit-animation: upAndDown 1s;
+          animation: upAndDown 1s;
   position: relative;
   top: 90%;
   right: 14%;
 }
 
-.banner .cover .textLayout {
+@-webkit-keyframes upAndDown {}
+
+@keyframes upAndDown {}.banner .cover .textLayout {
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
