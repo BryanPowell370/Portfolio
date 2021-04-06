@@ -1,6 +1,11 @@
 $buttonColor: #20c997;
 $background: white;
 $backgroundFade: rgb(247, 247, 247);
+$navBackGroundColor: black;
+
+@mixin navSpace {
+    padding-top: 100px;
+}
 
 @mixin centerItems {
     display: grid;
@@ -21,6 +26,11 @@ $backgroundFade: rgb(247, 247, 247);
     height: 100vh;
 }
 
+@mixin fillSpace {
+    width: 100%;
+    height: 100%;
+}
+
 .button {
     background: transparent;
     text-decoration: none;
@@ -37,7 +47,8 @@ $backgroundFade: rgb(247, 247, 247);
         background-color: $buttonColor;
     }
 }
-li{
+
+li {
     list-style: none;
 }
 
@@ -75,4 +86,38 @@ li{
 
         }
     }
+}
+
+
+.title {
+    font-weight: 600;
+    font-size: 1.75rem !important;
+
+    span {}
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+a {
+
+    @include fillSpace;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    padding: 15px;
+    border-style: unset;
+
+    &:hover {
+        color: $buttonColor;
+    }
+
 }

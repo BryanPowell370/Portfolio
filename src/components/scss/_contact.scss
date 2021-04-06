@@ -3,7 +3,7 @@
 .contactLayout {
     @include fullScreen;
     height: fit-content;
-
+    @include navSpace;
 
 
     .AddressLayout {

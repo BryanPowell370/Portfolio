@@ -14,7 +14,7 @@
                 <div class="wrapAboutInfo">
 
 
-                    <h1>I'm Bryan Powell, a Web Developer</h1>
+                    <h1 class="title">I'm <span style="color: #20c997; font-weight: 600; font-size: 1.75rem !important;">Bryan Powell,</span>  a Web Developer </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi provident id officiis accusamus
                         eum
                         laboriosam, incidunt pariatur quasi corrupti optio ex ratione officia, eius fuga minus dolorem

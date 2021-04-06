@@ -1,10 +1,10 @@
 <template  >
   <div>
     <Nav />
-    <Banner />
-    <About />
-    <Projects />
-    <Contact/>
+    <Banner   id="banner" />
+    <About    id="about" />
+    <Projects id="projects" />
+    <Contact  id="contact" />
   </div>
 </template>
 <script>

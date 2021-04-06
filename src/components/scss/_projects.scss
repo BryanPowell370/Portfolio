@@ -1,6 +1,7 @@
 .projectsLayout {
     background-color: $backgroundFade;
     @include fullScreen;
+    @include navSpace;
 
     .ProjectWrapper {
         @include centerItems;

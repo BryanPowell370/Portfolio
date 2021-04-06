@@ -13,23 +13,28 @@
         color: white;
         display: grid;
         place-items: center;
-         
+
         grid-template-rows: auto 100px;
 
-        svg {
-            animation: upAndDown 1s;
+        a {
+            @include centerItems;
 
-            @keyframes upAndDown {}
+            svg {
+                animation: upAndDown 1s;
 
-          
+                @keyframes upAndDown {}
 
+
+
+            }
         }
+
 
         .textLayout {
             text-align: center;
             @include fitContent;
 
-         
+
 
             li {
                 list-style: none;
@@ -38,7 +43,7 @@
 
 
                 .typing {
-                  
+
                     padding: 10px;
                     border-right: 4px solid $buttonColor;
                     white-space: nowrap;
@@ -62,7 +67,7 @@
 
                     }
 
-                
+
 
                     @keyframes blink-caret {
 
