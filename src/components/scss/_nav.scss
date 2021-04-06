@@ -25,8 +25,15 @@
          @include centerItems;
          margin: 5px;
          height: fit-content;
+        a{
+           font-weight: bold;
+        } 
 
-         
+         h1 {
+            color: white;
+            position: absolute;
+            left: 10px;
+         }
 
       }
    }

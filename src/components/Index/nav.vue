@@ -3,10 +3,16 @@
 
     <div class="NavWrapper">
         <div class="nav">
-            <li> <a href="#banner"> Home       </a> </li>
-            <li> <a href="#about"> About       </a> </li>
+
+            <li>
+                <h1>Bryan</h1>
+            </li>
+
+
+            <li> <a href="#banner"> Home </a> </li>
+            <li> <a href="#about"> About </a> </li>
             <li> <a href="#projects"> Projects </a> </li>
-            <li> <a href="#contact"> Contact   </a> </li>
+            <li> <a href="#contact"> Contact </a> </li>
 
         </div>
     </div>
