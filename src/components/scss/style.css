@@ -91,6 +91,28 @@ a {
   border-style: unset;
 }
 
+@-webkit-keyframes UpDown {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes UpDown {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
 a:hover {
   color: #20c997;
 }
@@ -223,6 +245,17 @@ a {
   border-style: unset;
 }
 
+@keyframes UpDown {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
 a:hover {
   color: #20c997;
 }
@@ -249,6 +282,10 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: UpDown  1s alternate-reverse infinite;
 }
 
 .banner .cover a svg {
@@ -426,6 +463,17 @@ a {
   border-style: unset;
 }
 
+@keyframes UpDown {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
 a:hover {
   color: #20c997;
 }
@@ -594,6 +642,17 @@ a {
   text-decoration: none;
   padding: 15px;
   border-style: unset;
+}
+
+@keyframes UpDown {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 
 a:hover {

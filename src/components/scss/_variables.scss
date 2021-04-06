@@ -115,6 +115,18 @@ a {
     text-decoration: none;
     padding: 15px;
     border-style: unset;
+ 
+
+
+    @keyframes UpDown {
+        from{
+            transform: translateY(0px);
+         }
+ 
+        to {
+             transform: translateY(10px);
+         }
+    }
 
     &:hover {
         color: $buttonColor;

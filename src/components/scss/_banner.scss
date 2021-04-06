@@ -18,7 +18,8 @@
 
         a {
             @include centerItems;
-
+            width: fit-content;
+            animation: UpDown  1s alternate-reverse infinite;
             svg {
                 animation: upAndDown 1s;
 
