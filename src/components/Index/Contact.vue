@@ -25,15 +25,15 @@
                         <p>bryan.powell370@gmail.com</p>
                     </li>
                     <li>
-                           <button class="button">Send Message</button> 
+                           
                     </li>
                 </ul>
 
                 <form action="">
-                    <input placeholder="Name" type="text" name="Name" id="">
-                    <input placeholder="Email" type="email" name="Email" id="">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tell us more about your needs........"></textarea>
-             
+                    <input  class="formStyle" placeholder="Name" type="text" name="Name" id="">
+                    <input  class="formStyle" placeholder="Email" type="email" name="Email" id="">
+                    <textarea class="formStyle" name="" id="" cols="30" rows="10" placeholder="Tell us more about your needs........"></textarea>
+             <button class="button">Send Message</button> 
                 
                 </form>
                

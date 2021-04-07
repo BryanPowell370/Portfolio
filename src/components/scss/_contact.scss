@@ -22,13 +22,18 @@
         grid-template-rows: 50px;
         gap: 1rem;
 
-        input {
+        .formStyle {
+            border: 2px solid #70b4fc;
             border-radius: 5px;
+ 
+        }
+
+        button {
+            grid-column: span 2;
+            place-self: center;
         }
 
         textarea {
-            
-            border-radius: 5px;
             grid-column: span 2;
         }
     }

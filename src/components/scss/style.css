@@ -528,6 +528,10 @@ a:hover {
   height: 250px;
 }
 
+.projectsLayout .ProjectWrapper .trello {
+  background-image: url(https://th.bing.com/th/id/OIP.XGe9X3_u9ugycooO0KtbAwHaEC?pid=ImgDet&rs=1);
+}
+
 .themeColor {
   color: #20c997;
 }
@@ -657,12 +661,17 @@ a:hover {
   gap: 1rem;
 }
 
-.contactLayout form input {
+.contactLayout form .formStyle {
+  border: 2px solid #70b4fc;
   border-radius: 5px;
 }
 
+.contactLayout form button {
+  grid-column: span 2;
+  place-self: center;
+}
+
 .contactLayout form textarea {
-  border-radius: 5px;
   grid-column: span 2;
 }
 

@@ -9,9 +9,9 @@
         </div>
 
         <div class="ProjectWrapper">
-           <div class="cards small"></div>
-           <div class="cards medium"></div>
-           <div class="cards large"></div>
+           <div class="cards small    ecom"></div>
+           <div class="cards medium   spotify"></div>
+           <div class="cards large    trello"></div>
              
         </div>
     </div>
