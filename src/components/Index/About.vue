@@ -35,14 +35,14 @@
                     <p><b>Name:</b> Bryan Powell</p>
                 </li>
                 <li>
-                    <p><b>Email:</b> bryan.powell@gmail.com</p>
+                    <p><b>Email:</b> bryan.powell370@gmail.com</p>
                 </li>
                 <li>
                     <p><b>Age:</b> 27</p>
                 </li>
-                <li>
+               <!--  <li>
                     <p><b>From:</b> Sneads, FL</p>
-                </li>
+                </li> -->
                 <li><button class="button"> Download CV</button></li>
             </div>
 
