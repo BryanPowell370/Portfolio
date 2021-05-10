@@ -14,9 +14,9 @@
                     <li>
                         <h1>Address</h1>
                     </li>
-                    <li>
+                    <!-- <li>
                         <p>3011 Salem Church Rd, Sneads Fl</p>
-                    </li>
+                    </li> -->
                     <li>
                         <p>(850) 372-2486</p>
                     </li>
